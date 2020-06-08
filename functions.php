@@ -276,6 +276,6 @@ add_action('wp_ajax_nopriv_update_theme', 'update_theme');
 function update_theme()
 {
     $git_root = dirname(__FILE__);
-    exec("cd ${git_root} && git pull 2>&1", $out);
+    exec("cd ${git_root} && git pull", $out);
     echo join("\n", $out);
 }
