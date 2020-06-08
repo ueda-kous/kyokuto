@@ -1,0 +1,956 @@
+#service-single h2 {
+    margin-bottom: 30px;
+}
+
+#service-single h3 {
+    font-size      : 20px;
+    /*margin-bottom: 14px;*/
+}
+
+#service-single p+h3 {
+    margin-top: 20px;
+}
+
+#service-single ul {
+    list-style: none;
+}
+
+#service-single ul li {
+    padding-left: 1.5em;
+    position    : relative;
+}
+
+#service-single ul li::before {
+    content : "●";
+    color   : #F39800;
+    position: absolute;
+    left    : 0;
+    top     : 0;
+}
+
+#service #main .columns {
+    margin           : 0 -6px -30px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap    : wrap;
+    flex-wrap        : wrap;
+}
+
+#service #main .columns .column1 {
+    padding           : 0 6px;
+    margin-bottom     : 30px;
+    -webkit-flex-basis: 33%;
+    flex-basis        : 33%;
+}
+
+#service #main .columns .column1 img {
+    margin-bottom: 15px;
+}
+
+#service #main .columns .column1 h2 {
+    font-size: 20px;
+    color    : #F29800;
+}
+
+#service #main .columns .column1 .wrap1 {
+    background: #F8F8F8;
+    padding   : 10px 10px 30px;
+}
+
+#service #main .columns .column1 .wrap1 .inner1 {
+    padding: 0 20px;
+}
+
+#service #main .columns .column1 .wrap1 p {
+    min-height: 80px;
+}
+
+#service #main .columns .column1 .wrap1 a {
+    text-align: center;
+    margin-top: 25px;
+    width     : auto;
+}
+
+#shop-list #main .aside2 {
+    padding   : 55px;
+    background: #F8F8F8;
+}
+
+#shop-list #main .aside2 dl dt {
+    display: none;
+}
+
+#shop-list #main .aside2 dl dd p {
+    font-size    : 18px;
+    margin-bottom: 35px;
+}
+
+#shop-list #main .aside2 dl dd ul {
+    display                : flex;
+    margin                 : 0 -10px;
+    -webkit-justify-content: center;
+    justify-content        : center;
+}
+
+#shop-list #main .aside2 dl dd ul li {
+    padding: 0 10px;
+}
+
+#shop-list #main .aside2 dl dd input[type=submit] {
+    display: none;
+
+}
+
+#shop-list #main h2 {
+    margin-top     : 45px;
+    font-size      : 20px;
+    font-weight    : normal;
+    padding-bottom : 10px;
+    /*margin-bottom: 40px;*/
+    border-bottom  : solid 2px #F39800;
+}
+
+#shop-list #main table {
+    width: 100%;
+}
+
+#shop-list #main table th {
+    color: #F39800;
+}
+
+#shop-list #main table th,
+#shop-list #main table td {
+    padding      : 25px;
+    border-bottom: solid 1px #CCC;
+    text-align   : left;
+    background   : none;
+}
+
+#shop-list #main table tbody tr:nth-of-type(even) {
+    background: #f8f8f8;
+}
+
+#company #main table td table td {
+    padding: 5px;
+    border : none;
+}
+
+#company #main table td table td:nth-of-type(1) {
+    width: 10em;
+}
+
+#company #main table td table td:last-of-type {
+    width: 10em;
+}
+
+#recruit #main table th {
+    width: 15em;
+}
+
+#owner #main>.container {
+    max-width: 100%;
+    padding  : 0;
+}
+
+#owner #main h2 {
+    font-size: 20px;
+}
+
+#owner #main .section1 h2 {
+    font-size: 24px;
+}
+
+#owner #main .section1 h3 {
+    padding      : 15px;
+    background   : #FFF;
+    text-align   : center;
+    margin-bottom: 20px;
+}
+
+#owner #main .section1 a[href^=tel]::before {
+    content       : url(https://k-cleaning.jp/wp-content/uploads/2020/03/ico_tel1.png);
+    display       : inline-block;
+    vertical-align: middle;
+    margin-right  : 0.25em;
+}
+
+#owner #main .section1 a[href^=tel] em {
+    font-style: normal;
+    color     : #F39800;
+}
+
+#faq #main h2 {
+    font-size    : 20px;
+    color        : #F39800;
+    margin-bottom: 15px;
+}
+
+#faq #main .wrap1+.wrap1 {
+    margin-top: 80px;
+}
+
+#faq #main .wrap1 dl+dl {
+    margin-top: 10px;
+}
+
+#faq #main .wrap1 dl dt,
+#faq #main .wrap1 dl dd {
+    padding : 15px 3em 15px;
+    position: relative;
+}
+
+#faq #main .wrap1 dl dt {
+    background   : #FEF5E7;
+    margin-bottom: 5px;
+    cursor       : pointer;
+}
+
+#faq #main .wrap1 dl dt::before {
+    content : "Q.";
+    color   : #F39800;
+    position: absolute;
+    top     : 15px;
+    left    : 15px;
+}
+
+#faq #main .wrap1 dl dt::after {
+    content           : url(https://k-cleaning.jp/wp-content/uploads/2020/03/ico_qrrow1.png);
+    position          : absolute;
+    right             : 1em;
+    top               : 15px;
+    -webkit-transition: all .5s;
+    -moz-transition   : all .5s;
+    -ms-transition    : all .5s;
+    -o-transition     : all .5s;
+    transition        : all .5s;
+}
+
+#faq #main .wrap1 dl dt.on::after {
+    -webkit-transform : rotate(180deg);
+    -moz-transform    : rotate(180deg);
+    -ms-transform     : rotate(180deg);
+    -o-transform      : rotate(180deg);
+    transform         : rotate(180deg);
+    -webkit-transition: all .5s;
+    -moz-transition   : all .5s;
+    -ms-transition    : all .5s;
+    -o-transition     : all .5s;
+    transition        : all .5s;
+}
+
+#faq #main .wrap1 dl dd {
+    background   : #F8F8F8;
+    margin-bottom: 25px;
+    display      : none;
+}
+
+#faq #main .wrap1 dl dd::before {
+    content : "A.";
+    color   : #F39800;
+    position: absolute;
+    top     : 15px;
+    left    : 15px;
+}
+
+#recruit .wrap1 {
+    padding-top: 55px;
+}
+
+
+#staffblog #main #content {
+    -webkit-justify-content: space-between;
+    justify-content        : space-between;
+}
+
+#staffblog #main #leftcontent {
+    -webkit-flex-basis: 850px;
+    flex-basis        : 850px;
+}
+
+#staffblog #main #leftcontent h2 {
+    font-size     : 22px;
+    border-bottom : solid 4px #F7931D;
+    padding-bottom: 15px;
+    margin-bottom : 30px;
+}
+
+#staffblog #main #leftcontent .wrap1 {
+    font-size: 16px;
+}
+
+#staffblog #main #leftcontent img {
+    margin-bottom: 25px;
+}
+
+#staffblog #main #sidebar {
+    -webkit-flex-basis: 300px;
+    flex-basis        : 300px;
+}
+
+#staffblog #main #sidebar dl+dl {
+    margin-top: 55px;
+}
+
+#staffblog #main #sidebar dl dt {
+    font-size     : 16px;
+    font-weight   : bold;
+    border-bottom : solid 4px #F7931D;
+    padding-bottom: 15px;
+    margin-bottom : 30px;
+}
+
+#staffblog #main #sidebar dl.list1 dd ul li+li {
+    margin-top : 15px;
+    padding-top: 15px;
+    border-top : dotted 1px #dddddd;
+}
+
+#staffblog #main #sidebar dl.list1 dd ul li a {
+    display        : flex;
+    color          : inherit;
+    text-decoration: none;
+}
+
+#staffblog #main #sidebar dl.list1 dd ul li .column1 {
+    -webkit-flex-shrink: 0;
+    flex-shrink        : 0;
+    -webkit-flex-basis : 100px;
+    flex-basis         : 100px;
+}
+
+#staffblog #main #sidebar dl.list1 dd ul li .column2 {
+    font-size        : 16px;
+    -webkit-flex-grow: 1;
+    flex-grow        : 1;
+    padding-left     : 20px;
+}
+
+#staffblog #main #sidebar dl.list1 dd ul li .column2 span {
+    font-size: 14px;
+    color    : #F7931D;
+    display  : block;
+}
+
+#staffblog #main #sidebar dl.list2 dd ul li {
+    display     : inline-block;
+    margin-right: 10px;
+}
+
+#staffblog #main #sidebar dl.list2 dd ul li a {
+    color                : inherit;
+    text-decoration      : none;
+    padding              : 5px;
+    display              : inline-block;
+    background           : #EDEDED;
+    -webkit-border-radius: 10px;
+    border-radius        : 10px;
+}
+
+@media screen and (max-width:720px) {
+
+    #service #main .columns {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap    : wrap;
+        flex-wrap        : wrap;
+    }
+
+    #service #main .columns .column1 {
+        -webkit-flex-basis: 100%;
+        flex-basis        : 100%;
+    }
+
+    #outline #main table th,
+    #outline #main table td {
+        display           : block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing   : border-box;
+        box-sizing        : border-box;
+    }
+
+    #service #main .columns .column1 .wrap1 a {
+        margin-top: 30px;
+    }
+
+    #shop-list #main table thead {
+        display: none;
+    }
+
+    #shop-list #main table tbody tr td {
+        padding-top   : 0;
+        padding-bottom: 0;
+        border-bottom : none;
+        border-top    : none;
+    }
+
+    /*#shop-list #main table tbody tr td:nth-of-type(1)::before {
+        display: block;
+        content: "店舗形態";
+        color: #F39800;
+    }*/
+
+    #shop-list #main table tbody tr td:nth-of-type(1) {
+        padding-top: 20px;
+    }
+
+    #shop-list #main table tbody tr td:nth-of-type(3) {
+        padding-bottom: 20px;
+    }
+
+    #shop-list #main table tbody tr td:nth-of-type(1)::before {
+        display     : block;
+        /*text-align: center;*/
+        content     : "ショップ名";
+        color       : #F39800;
+    }
+
+    #shop-list #main table tbody tr td:nth-of-type(2)::before {
+        display     : block;
+        /*text-align: center;*/
+        content     : "住所";
+        color       : #F39800;
+    }
+
+    #shop-list #main table tbody tr td:nth-of-type(3)::before {
+        display     : block;
+        /*text-align: center;*/
+        content     : "電話番号";
+        color       : #F39800;
+    }
+
+    #shop-list #main .aside2 {
+        padding: 20px 15px;
+    }
+
+    #shop-list #main .aside2 dl dd ul {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap    : wrap;
+        flex-wrap        : wrap;
+    }
+
+    #shop-list #main .aside2 dl dd ul li {
+        -webkit-flex-basis: 100%;
+        flex-basis        : 100%;
+        padding-bottom    : 15px;
+    }
+
+    #shop-list #main .aside2 dl dd ul li select {
+        width: 100%;
+    }
+
+    #shop-list #main .aside2 dl dd ul li input[type=submit] {
+        max-width         : 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing   : border-box;
+        box-sizing        : border-box;
+    }
+
+    #service-single .wp-block-columns {
+        flex-wrap: wrap;
+    }
+
+    #service-single .wp-block-column {
+        display   : block !important;
+        flex-basis: 100% !important;
+        width     : 100%;
+    }
+
+    #owner #main .section1 a[href^=tel] {
+        display: block;
+    }
+
+    #owner #main .section1 a[href^=tel] em {
+        display: block;
+    }
+
+    #staffblog #main #content {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap    : wrap;
+        flex-wrap        : wrap;
+    }
+
+    #staffblog #main #content>* {
+        -webkit-flex-basis: 100%;
+        flex-basis        : 100%;
+    }
+
+    #staffblog #main #content #sidebar {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width:721px) and (max-width:812px) {
+    #service #main .columns .column1 {
+        flex-basis: 50%;
+    }
+}
+
+
+/* Contact
+*********************************************************/
+
+span.text03 {
+    font-weight: bold;
+    color      : #1f7418;
+}
+
+#contact #main {
+    padding-bottom: 60px;
+}
+
+#contact .catch01 h4 {
+    font-size  : 2rem;
+    font-weight: normal;
+}
+
+#contact li {
+    display: inline-block;
+}
+
+#contact .wrap01 {
+    padding-top: 60px;
+}
+
+#contact .catch01 {
+    width             : 100%;
+    padding           : 20px;
+    margin-bottom     : 40px;
+    text-align        : center;
+    font-size         : 1.8rem;
+    line-height       : 1.8;
+    background        : #eff5fa;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing   : border-box;
+    box-sizing        : border-box;
+}
+
+#contact .catch01 span {
+    font-size  : 2.8rem;
+    color      : #116cb6;
+    font-weight: bold;
+    display    : inline-block;
+}
+
+#contact .catch01 span+span {
+    padding-left: 1em;
+}
+
+#contact .catch01 small {
+    font-size: 1.4rem;
+}
+
+#contact ol.list01 {
+    font-size   : 1.6rem;
+    list-style  : decimal;
+    padding-left: 1.75em;
+    line-height : 2;
+}
+
+#contact ul.list01 {
+    font-size    : 1.5rem;
+    list-style   : disc;
+    padding-left : 1.75em;
+    line-height  : 2;
+    margin-bottom: 35px;
+}
+
+
+#contact .text01 {
+    font-size  : 1.6rem;
+    line-height: 1.8;
+}
+
+#contact h2 {
+    font-size    : 2.2rem;
+    color        : #333;
+    margin-bottom: 15px;
+}
+
+#contact table {
+    width        : 100%;
+    margin-bottom: 30px;
+    margin-top   : 20px;
+}
+
+#contact table table {
+    margin: 0;
+}
+
+#contact table th,
+#contact table td {
+    border        : none;
+    padding       : 15px;
+    font-size     : 1.6rem;
+    vertical-align: top;
+    text-align    : left;
+    border        : solid 5px #fff;
+    background    : #FAFAFA;
+}
+
+#contact select {
+    height: 48px;
+}
+
+#contact .check-agree {
+    font-size: 1.6rem;
+}
+
+#contact .agree-wrap {
+    font-size : 1.6rem;
+    background: #f9f9f9;
+    margin    : 20px 0 40px;
+    padding   : 10px;
+    box-sizing: border-box;
+}
+
+#contact table table th,
+#contact table table td {
+    background: none;
+    border    : none;
+}
+
+#contact table table th {
+    font-weight   : normal;
+    width         : 190px;
+    vertical-align: middle;
+}
+
+#contact table th {
+    width     : 250px;
+    background: #aecde6;
+}
+
+#contact table th span {
+    color: red;
+}
+
+#contact table td label {
+    font-weight: normal;
+}
+
+#contact table td .inner01 {
+    padding-right: 20px;
+}
+
+#contact table td input[type=text],
+#contact table td input[type=email],
+#contact table td input[type=tel] {
+    width  : 500px;
+    padding: 10px;
+}
+
+#contact table td input[type=text].var01 {
+    width: 10em;
+}
+
+#contact table td input[type=checkbox] {
+    display     : inline-block;
+    margin-right: 0.5em;
+}
+
+#contact table td input[type=checkbox]+label {
+    display      : inline-block;
+    margin-bottom: 5px;
+}
+
+#contact table td input.var02 {
+    width: 8em;
+}
+
+#contact table td input.var03 {
+    width: 8em;
+}
+
+#contact table td select {
+    margin-right: 5px;
+    max-width   : 20em;
+}
+
+#contact table td textarea {
+    width : 100%;
+    height: 10em;
+}
+
+#contact table td .bg-danger {
+    padding   : 10px;
+    margin-top: 5px;
+}
+
+#contact .btnWrap01 {
+    padding : 25px 0 0;
+    overflow: hidden;
+}
+
+#contact .btnWrap01 p {
+    font-size: 1.4rem;
+}
+
+#contact input[type=submit],
+#contact .btnWrap01 a,
+#contact .fm-modoru {
+    appearance     : none;
+    border         : none;
+    width          : 300px;
+    height         : 65px;
+    line-height    : 65px;
+    color          : #fff;
+    border-radius  : 35px;
+    background     : #116cb6;
+    display        : block;
+    margin         : 20px auto;
+    font-size      : 1.6rem;
+    font-weight    : bold;
+    text-align     : center;
+    text-decoration: none;
+}
+
+#contact .fm-modoru {
+    margin    : 0 auto;
+    background: #666;
+}
+
+#contact .btnWrap01 a.btn01 {
+    background: #666;
+}
+
+#contact .wrap03 {
+    padding      : 0 15px;
+    margin-bottom: 20px;
+}
+
+#contact .wrap03 p {
+    padding   : 15px;
+    background: #EDEDED;
+    font-size : 0.9rem;
+}
+
+#contact p.text03 {
+    font-size    : 1.6rem;
+    color        : #fff;
+    text-align   : center;
+    background   : #555555;
+    padding      : 10px 15px;
+    margin-bottom: 0;
+}
+
+#contact .textWrap02 {
+    margin-bottom: 30px;
+}
+
+#contact .textWrap02 .inner01 {
+    border        : solid 1px #CCC;
+    padding       : 15px;
+    height        : 240px;
+    -ms-overflow-y: scroll;
+    overflow-y    : scroll;
+}
+
+#contact input[name=policy] {
+    transform: scale(1.5);
+}
+
+#contact label[for=policy] {
+    font-size     : 1.5rem;
+    vertical-align: middle;
+    display       : inline-block;
+    padding-left  : 0.5em;
+}
+
+/* accordion */
+
+.accbox label.acotitle {
+    display    : block;
+    font-weight: bold;
+    cursor     : pointer;
+    transition : all 0.5s;
+}
+
+.accbox label.acotitle h2:before {
+    content      : '▶';
+    padding-right: 8px;
+    color        : #ccc;
+    font-size    : 1.5rem;
+}
+
+.cssacc:checked+label.acotitle h2:before {
+    content: '▼';
+}
+
+.accbox input.cssacc {
+    display: none;
+}
+
+.accbox .accshow {
+    height    : 0;
+    padding   : 0;
+    overflow  : hidden;
+    opacity   : 0;
+    transition: 0.8s;
+}
+
+.cssacc:checked+label.acotitle+.accshow {
+    height : auto;
+    opacity: 1;
+}
+
+@media screen and (max-width:828px) {
+
+    #contact input[type="file"] {
+        box-sizing: border-box;
+        width     : 100%;
+    }
+
+    #contact .catch01 span,
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #contact .catch01 br {
+        display: none;
+    }
+
+    #contact .catch01 span {
+        display: block;
+    }
+
+    #contact .catch01 span+span {
+        padding-left: 0;
+    }
+
+    #contact table th,
+    #contact table td {
+        display           : block;
+        width             : 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing   : border-box;
+        box-sizing        : border-box;
+    }
+
+    #contact table th {
+        /*background: #ccc;*/
+    }
+
+    #contact table td input[type=text],
+    #contact table td input[type=email],
+    #contact table td input[type=tel] {
+        width             : 85%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing   : border-box;
+        box-sizing        : border-box;
+    }
+
+    #contact table td input.var02 {
+        width: 4em;
+    }
+
+    #contact table td input[type=text].var01 {
+        width        : 100%;
+        margin-bottom: 10px;
+    }
+
+    #contact table td input.var03 {
+        width: 4em;
+    }
+
+    #contact table td input.var03+br+input.var01 {
+        margin-top: 20px;
+    }
+
+    #contact input[type=submit],
+    #contact .btnWrap01 a,
+    #contact .fm-modoru {
+        width       : 75%;
+        margin-left : auto;
+        margin-right: auto;
+    }
+
+    .btnWrap01 {
+        text-align: center;
+    }
+}
+
+
+
+/* news
+*********************************************************/
+
+#pageVisual.news {
+    background-image: url(../../images/page/img_news1.jpg);
+}
+
+#news {
+    padding-bottom: 30px;
+}
+
+#news .section01 {
+    padding-bottom: 50px;
+    margin-bottom : 50px;
+    border-bottom : 1px dotted #ddd;
+}
+
+#news .section01:last-of-type,
+#news .section01.var01 {
+    border       : none;
+    margin-bottom: 0;
+}
+
+#news .section01 .pure-g {
+    margin-left : -20px;
+    margin-right: -20px;
+}
+
+#news .section01 .pure-g [class*=pure-u] {
+    padding-left : 20px;
+    padding-right: 20px;
+}
+
+#news .section01 .date {
+    font-size    : 1.4rem;
+    margin-bottom: 10px;
+}
+
+
+#news .section01 h2 {
+    font-size    : 2rem;
+    margin-bottom: 15px;
+}
+
+#news .section01 h2 a {
+    color          : inherit;
+    text-decoration: none;
+}
+
+#news .section01 .inner01 {
+    font-size  : 1.6rem;
+    line-height: 1.8;
+}
+
+#news .section01 .inner01 a.btn1 {
+    display        : block;
+    width          : 12em;
+    padding        : 10px 0;
+    margin-top     : 1em;
+    font-size      : 1.6rem;
+    color          : #FFF;
+    text-decoration: none;
+    text-align     : center;
+    background     : #333;
+}
+
+#news .section01 .list1 li {
+    padding      : 20px 0;
+    font-size    : 16px;
+    border-bottom: solid 1px #CCC;
+}
+
+#news .section01 .list1 li+li {}
+
+#news .section01 .list1 li a {
+    display        : inline-block;
+    color          : inherit;
+    text-decoration: none;
+}
+
+#news .section01 .list1 li time {
+    color             : #F39800;
+    -webkit-flex-basis: 8em;
+    flex-basis        : 8em;
+}
