@@ -95,6 +95,11 @@
     padding: 0 10px;
 }
 
+#shop-list #main .aside2 dl dd ul li select {
+    display: block;
+    padding: 8px;
+}
+
 #shop-list #main .aside2 dl dd input[type=submit] {
     display: none;
 
