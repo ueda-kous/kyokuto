@@ -438,7 +438,8 @@
     }
 
     #shop-list #main .aside2 dl dd ul li select {
-        width: 100%;
+        width     : 100%;
+        box-sizing: border-box;
     }
 
     #shop-list #main .aside2 dl dd ul li input[type=submit] {

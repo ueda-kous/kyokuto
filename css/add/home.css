@@ -268,6 +268,11 @@
         margin-top: 20px;
     }
 
+    #home #main .aside2 dl dd ul li select {
+        width     : 100%;
+        box-sizing: border-box;
+    }
+
     #home #main .aside2 dl dd input[type=submit] {
         margin-top: 0;
     }
