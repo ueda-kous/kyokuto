@@ -270,7 +270,9 @@ add_filter('aioseop_canonical_url', 'my_canonical');
 add_filter( 'aioseop_title', 'aioseop_title_func' );
 
 function aioseop_title_func( $title ) {
-    // $title = 'new title';
+    
+    global $post;
+    $title = $post->post_title."｜".$title;
 
     return $title;
 }
