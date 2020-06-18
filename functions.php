@@ -267,7 +267,13 @@ function my_canonical($canonical)
 }
 add_filter('aioseop_canonical_url', 'my_canonical');
 
+add_filter( 'aioseop_title', 'aioseop_title_func' );
 
+function aioseop_title_func( $title ) {
+    $title = 'new title';
+
+    return $title;
+}
 
 /**
  * Add deploy hook endpoint
