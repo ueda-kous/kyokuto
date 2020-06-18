@@ -272,7 +272,9 @@ add_filter( 'aioseop_title', 'aioseop_title_func' );
 function aioseop_title_func( $title ) {
     
     global $post;
-    $title = $post->post_title."｜".$title;
+    if(!is_front_page()&&is_page()){
+        $title = $post->post_title."｜".$title;
+    }
 
     return $title;
 }
