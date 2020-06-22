@@ -1,6 +1,6 @@
 <?php 
 	if(!isset($_GET['pid'])){
-		$location = home_url('service');
+		$location = home_url();
 		wp_redirect($location);
 		exit;
 	}
