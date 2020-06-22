@@ -271,9 +271,11 @@ add_filter( 'aioseop_title', 'aioseop_title_func' );
 
 function aioseop_title_func( $title ) {
     
-    global $post;
     if(!is_front_page()&&is_page()){
+        global $post;
         $title = $post->post_title."｜".$title;
+    }elseif(is_post_type_archive('blog')){
+        $title = "スタッフブログ"."｜".bloginfo('title');
     }
 
     return $title;
