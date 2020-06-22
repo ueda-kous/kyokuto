@@ -276,7 +276,7 @@ function aioseop_title_func( $title ) {
         $title = $post->post_title."｜".$title;
     }
     if(is_post_type_archive('staffblog')){
-        $title = "スタッフブログ"."｜".bloginfo('title');
+        $title = "スタッフブログ"."｜".get_bloginfo('description');
     }
 
     return $title;
