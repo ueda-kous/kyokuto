@@ -274,7 +274,7 @@ function aioseop_title_func( $title ) {
     if(!is_front_page()&&is_page()){
         global $post;
         $title = $post->post_title."｜".$title;
-    }elseif(is_post_type_archive('blog')){
+    }elseif(is_post_type_archive('staffblog')){
         $title = "スタッフブログ"."｜".bloginfo('title');
     }
 
