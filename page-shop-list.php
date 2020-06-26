@@ -13,6 +13,7 @@
 							<th>ショップ名</th>
 							<th>住所</th>
 							<th>電話番号</th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -96,7 +97,7 @@
             	var title = post.title.rendered;
             	var address = post.data['住所'];
             	var tel = post.data['電話番号'];
-            	var html = '<tr><td>'+title+'</td><td>'+address+'</td><td><a href="tel:'+tel+'">'+tel+'</a></td></tr>';
+            	var html = '<tr><td>'+title+'</td><td>'+address+'</td><td><a href="tel:'+tel+'">'+tel+'</a></td><td><a href="/shop/?sid='+post.id+'" class="btn1">店舗詳細</a></td></tr>';
 	            $('#stage table tbody').append(html);
             }
 

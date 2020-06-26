@@ -134,6 +134,14 @@
     background: #f8f8f8;
 }
 
+#shop-list #main table td a.btn1 {
+    margin-top: 0;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
 #shop #shopsearch {
     background: #f39800;
     padding   : 40px 0;
