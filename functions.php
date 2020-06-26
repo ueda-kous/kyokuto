@@ -251,7 +251,6 @@ function add_theme_caps()
 add_action('admin_init', 'add_theme_caps');
 
 
-
 function my_canonical($canonical)
 {
     if (is_front_page()) {
@@ -273,7 +272,13 @@ function aioseop_title_func( $title ) {
     
     if(!is_front_page()&&is_page()){
         global $post;
-        $title = $post->post_title."｜".$title;
+        if(!is_page('shop')){
+            $title = $post->post_title."｜".$title;
+        }elseif(isset($_GET['sid'])&&!empty($_GET['sid'])){
+            $_shop = file_get_contents('https://k-cleaning.jp/wp-json/wp/v2/shop/'.$_GET['sid']);
+            $shop = json_decode($_shop,true);
+            $title = $shop['title']['rendered']."｜".$post->post_title."｜".$title;
+        }
     }
     if(is_post_type_archive('staffblog')){
         $title = "スタッフブログ"."｜".get_bloginfo('description');
