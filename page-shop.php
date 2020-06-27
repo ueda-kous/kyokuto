@@ -102,7 +102,7 @@
                         <?php 
                             if(isset($data['data']['住所'])):
                         ?>
-                            <iframe src="https://maps.google.co.jp/maps?output=embed&z=15&q=<?php echo $data['data']['住所']." きょくとう".$data['title']['rendered']; ?>"></iframe>                   
+                            <iframe src="https://maps.google.co.jp/maps?output=embed&z=15&q=<?php echo $data['data']['住所']; ?>"></iframe>                   
                         <?php endif; ?>
                     </div>
                     <div class="column2">
