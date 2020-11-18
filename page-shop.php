@@ -106,180 +106,30 @@ if (isset($_GET['sid']) && !empty($_GET['sid'])) {
                         <?php endif; ?>
                     </div>
                     <div class="column2">
-                        <?php if (isset($_GET['mode']) && $_GET['mode'] == 'test') : ?>
-                            <dl>
-                                <dt>取扱サービス</dt>
-                                <dd>
-                                    <ul class="columns">
-                                        <?php
-                                        $services = $data['data']['サービス'];
-                                        foreach ((array)$services as $service) {
-                                            echo "<li>";
-                                            echo "<div class=\"wrap1\">";
-                                            if (!empty($service['icon'])) {
-                                                echo "<div class=\"inner1\">";
-                                                echo "<img src=\"{$service['icon']}\" alt=\"\" class=\"pure-img\">";
-                                                echo "</div>";
-                                            }
-                                            echo "<div class=\"inner2\">";
-                                            echo $service['name'];
+                        <dl>
+                            <dt>取扱サービス</dt>
+                            <dd>
+                                <ul class="columns">
+                                    <?php
+                                    $services = $data['data']['サービス'];
+                                    foreach ((array)$services as $service) {
+                                        echo "<li>";
+                                        echo "<div class=\"wrap1\">";
+                                        if (!empty($service['icon'])) {
+                                            echo "<div class=\"inner1\">";
+                                            echo "<img src=\"{$service['icon']}\" alt=\"\" class=\"pure-img\">";
                                             echo "</div>";
-                                            echo "<div>";
-                                            echo "</li>";
                                         }
-                                        ?>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        <?php else : ?>
-                            <dl>
-                                <dt>取扱サービス</dt>
-                                <dd>
-                                    <ul class="columns">
-                                        <li>
-                                            <div class="wrap1">
-                                                <div class="inner1">
-                                                    <img src="https://k-cleaning.jp/wp-content/uploads/2020/06/ico_shop1.png" alt="" class="pure-img">
-                                                </div>
-                                                <div class="inner2">
-                                                    オゾン＆アクアドライ
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="wrap1">
-                                                <div class="inner1">
-                                                    <img src="https://k-cleaning.jp/wp-content/uploads/2020/06/ico_shop2.png" alt="" class="pure-img">
-                                                </div>
-                                                <div class="inner2">
-                                                    花粉ガード加工
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="wrap1">
-                                                <div class="inner1">
-                                                    <img src="https://k-cleaning.jp/wp-content/uploads/2020/06/ico_shop3.png" alt="" class="pure-img">
-                                                </div>
-                                                <div class="inner2">
-                                                    絨毯
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="wrap1">
-                                                <div class="inner1">
-                                                    <img src="https://k-cleaning.jp/wp-content/uploads/2020/06/ico_shop4.png" alt="" class="pure-img">
-                                                </div>
-                                                <div class="inner2">
-                                                    有料しみぬき
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="wrap1">
-                                                <div class="inner1">
-                                                    <img src="https://k-cleaning.jp/wp-content/uploads/2020/06/ico_shop5.png" alt="" class="pure-img">
-                                                </div>
-                                                <div class="inner2">
-                                                    スニーカークリーニング
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="wrap1">
-                                                <div class="inner1">
-                                                    <img src="https://k-cleaning.jp/wp-content/uploads/2020/06/ico_shop6.png" alt="" class="pure-img">
-                                                </div>
-                                                <div class="inner2">
-                                                    着物
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="wrap1">
-                                                <div class="inner1">
-                                                    <img src="https://k-cleaning.jp/wp-content/uploads/2020/06/ico_shop7.png" alt="" class="pure-img">
-                                                </div>
-                                                <div class="inner2">
-                                                    防虫加工
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="wrap1">
-                                                <div class="inner1">
-                                                    <img src="https://k-cleaning.jp/wp-content/uploads/2020/06/ico_shop8.png" alt="" class="pure-img">
-                                                </div>
-                                                <div class="inner2">
-                                                    特殊クリーニング
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="wrap1">
-                                                <div class="inner1">
-                                                    <img src="https://k-cleaning.jp/wp-content/uploads/2020/06/ico_shop9.png" alt="" class="pure-img">
-                                                </div>
-                                                <div class="inner2">
-                                                    リフォーム
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="wrap1">
-                                                <div class="inner1">
-                                                    <img src="https://k-cleaning.jp/wp-content/uploads/2020/06/ico_shop10.png" alt="" class="pure-img">
-                                                </div>
-                                                <div class="inner2">
-                                                    撥水加工
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="wrap1">
-                                                <div class="inner1">
-                                                    <img src="https://k-cleaning.jp/wp-content/uploads/2020/06/ico_shop11.png" alt="" class="pure-img">
-                                                </div>
-                                                <div class="inner2">
-                                                    ブーツ
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="wrap1">
-                                                <div class="inner1">
-                                                    <img src="https://k-cleaning.jp/wp-content/uploads/2020/06/ico_shop12.png" alt="" class="pure-img">
-                                                </div>
-                                                <div class="inner2">
-                                                    かけつぎ
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="wrap1">
-                                                <div class="inner1">
-                                                    <img src="https://k-cleaning.jp/wp-content/uploads/2020/06/ico_shop13.png" alt="" class="pure-img">
-                                                </div>
-                                                <div class="inner2">
-                                                    折り目加工
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="wrap1">
-                                                <div class="inner1">
-                                                    <img src="https://k-cleaning.jp/wp-content/uploads/2020/06/ico_shop14.png" alt="" class="pure-img">
-                                                </div>
-                                                <div class="inner2">
-                                                    羽毛布団
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        <?php endif; ?>
+                                        echo "<div class=\"inner2\">";
+                                        echo $service['name'];
+                                        echo "</div>";
+                                        echo "<div>";
+                                        echo "</li>";
+                                    }
+                                    ?>
+                                </ul>
+                            </dd>
+                        </dl>
                     </div>
                 </div>
             </div>
