@@ -68,6 +68,26 @@ if (isset($_GET['sid']) && !empty($_GET['sid'])) {
                                 </td>
                             </tr>
                             <tr>
+                                <th>営業時間</th>
+                                <td>
+                                    <?php
+                                    if (isset($data['data']['営業時間'])) {
+                                        echo $data['data']['営業時間'];
+                                    }
+                                    ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>定休日</th>
+                                <td>
+                                    <?php
+                                    if (isset($data['data']['定休日'])) {
+                                        echo $data['data']['定休日'];
+                                    }
+                                    ?>
+                                </td>
+                            </tr>
+                            <tr>
                                 <th>電話番号</th>
                                 <td>
                                     <?php
@@ -92,6 +112,16 @@ if (isset($_GET['sid']) && !empty($_GET['sid'])) {
                                         }
                                         ?>
                                     </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>備考</th>
+                                <td>
+                                    <?php
+                                    if (isset($data['data']['備考'])) {
+                                        echo $data['data']['備考'];
+                                    }
+                                    ?>
                                 </td>
                             </tr>
                         </table>
