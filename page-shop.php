@@ -21,7 +21,7 @@ if (isset($_GET['sid']) && !empty($_GET['sid'])) {
 
             <?php
             $url = "https://k-cleaning.jp/wp-json/wp/v2/shop/{$shop_id}";
-            // $_data = wp_remote_get($url);
+            $_data = wp_remote_get($url);
             $data = json_decode($_data['body'], true);
 
             if (isset($_GET['mode'])) {
