@@ -266,22 +266,23 @@ function my_canonical($canonical)
 }
 add_filter('aioseop_canonical_url', 'my_canonical');
 
-add_filter( 'aioseop_title', 'aioseop_title_func' );
+add_filter('aioseop_title', 'aioseop_title_func');
 
-function aioseop_title_func( $title ) {
-    
-    if(!is_front_page()&&is_page()){
+function aioseop_title_func($title)
+{
+
+    if (!is_front_page() && is_page()) {
         global $post;
-        if(!is_page('shop')){
-            $title = $post->post_title."｜".$title;
-        }elseif(isset($_GET['sid'])&&!empty($_GET['sid'])){
-            $_shop = file_get_contents('https://k-cleaning.jp/wp-json/wp/v2/shop/'.$_GET['sid']);
-            $shop = json_decode($_shop,true);
-            $title = $shop['title']['rendered']."｜".$post->post_title."｜".$title;
+        if (!is_page('shop')) {
+            $title = $post->post_title . "｜" . $title;
+        } elseif (isset($_GET['sid']) && !empty($_GET['sid'])) {
+            $_shop = file_get_contents('https://k-cleaning.jp/wp-json/wp/v2/shop/' . $_GET['sid']);
+            $shop = json_decode($_shop, true);
+            $title = $shop['title']['rendered'] . "｜" . $post->post_title . "｜" . $title;
         }
     }
-    if(is_post_type_archive('staffblog')){
-        $title = "スタッフブログ"."｜".get_bloginfo('description');
+    if (is_post_type_archive('staffblog')) {
+        $title = "スタッフブログ" . "｜" . get_bloginfo('description');
     }
 
     return $title;
@@ -297,3 +298,7 @@ function update_theme()
     exec("cd ${git_root} && git pull", $out);
     echo join("\n", $out);
 }
+
+add_action('http_api_curl', function ($handle) {
+    curl_setopt($handle, CURLOPT_SSL_VERIFYPEER, false);
+}, 10);
