@@ -25,6 +25,7 @@ if (isset($_GET['sid']) && !empty($_GET['sid'])) {
             $data = json_decode($_data['body'], true);
 
             if (isset($_GET['mode'])) {
+                define('WP_DEBUG', 1);
                 var_dump($url);
                 var_dump($_data);
                 var_dump($data);
