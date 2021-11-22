@@ -24,10 +24,6 @@ if (isset($_GET['sid']) && !empty($_GET['sid'])) {
             $_data = wp_remote_get($url);
             $data = json_decode($_data['body'], true);
 
-            if (isset($_GET['mode'])) {
-                var_dump($data);
-            }
-
             if (isset($data['_links']['wp:featuredmedia'][0]['href'])) {
                 $_tumbnail = wp_remote_get($data['_links']['wp:featuredmedia'][0]['href']);
                 $tumbnail = json_decode($_tumbnail['body'], true);
