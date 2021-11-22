@@ -29,8 +29,8 @@ if (isset($_GET['sid']) && !empty($_GET['sid'])) {
             }
 
             if (isset($data['_links']['wp:featuredmedia'][0]['href'])) {
-                $_tumbnail = file_get_contents($data['_links']['wp:featuredmedia'][0]['href'], true);
-                $tumbnail = json_decode($_tumbnail, true);
+                $_tumbnail = wp_remote_get($data['_links']['wp:featuredmedia'][0]['href']);
+                $tumbnail = json_decode($_tumbnail['body'], true);
             }
 
             $shoptypes = get_shoptypes();
