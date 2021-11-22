@@ -24,6 +24,10 @@ if (isset($_GET['sid']) && !empty($_GET['sid'])) {
             $_data = file_get_contents($url);
             $data = json_decode($_data, true);
 
+            if (isset($_GET['mode'])) {
+                var_dump($data);
+            }
+
             if (isset($data['_links']['wp:featuredmedia'][0]['href'])) {
                 $_tumbnail = file_get_contents($data['_links']['wp:featuredmedia'][0]['href'], true);
                 $tumbnail = json_decode($_tumbnail, true);
