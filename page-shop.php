@@ -20,11 +20,12 @@ if (isset($_GET['sid']) && !empty($_GET['sid'])) {
         <div id="lower" class="container">
 
             <?php
-            $url = "https://k-cleaning.jp/wp-json/wp/v2/shop/{$shop_id}?orderby=id";
+            $url = "https://k-cleaning.jp/wp-json/wp/v2/shop/{$shop_id}";
             $_data = file_get_contents($url);
             $data = json_decode($_data, true);
 
             if (isset($_GET['mode'])) {
+                phpinfo();
                 var_dump($url);
                 var_dump($_data);
                 var_dump($data);
