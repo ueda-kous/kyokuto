@@ -22,11 +22,7 @@ if (isset($_GET['sid']) && !empty($_GET['sid'])) {
             <?php
             $url = "https://k-cleaning.jp/wp-json/wp/v2/shop/{$shop_id}";
             $_data = wp_remote_get($url);
-            // $data = json_decode($_data['body'], true);
-
-            if (isset($_GET['mode'])) {
-                var_dump($_data);
-            }
+            $data = json_decode($_data['body'], true);
 
             if (isset($data['_links']['wp:featuredmedia'][0]['href'])) {
                 $_tumbnail = file_get_contents($data['_links']['wp:featuredmedia'][0]['href'], true);
